@@ -11,7 +11,7 @@
     <div class="container header-container">
       <div class="logo">
         <!-- Replace src with your logo image -->
-        <img src="logo.png" alt="Logo">
+        <img src="images/profile.jpg" alt="Logo">
         <span class="logo-text">Portfolio</span>
       </div>
       <nav class="navbar">
@@ -28,6 +28,7 @@
     </div>
   </header>
 
+<!-- Home section -->
   <section id="home" class="hero-section">
     <div class="container hero-content">
       <h1>I’m an Experienced Full Stack Developer</h1>
@@ -36,25 +37,68 @@
         <a href="#projects" class="btn primary-btn">View my Work</a>
         <a href="#contact" class="btn secondary-btn">Get in Touch</a>
       </div>
-      <div class="social-icons">
-        <!-- Replace with your icon images / SVGs -->
-        <a href="https://wa.me/YOURNUMBER" target="_blank" class="icon"><img src="whatsapp-icon.svg" alt="WhatsApp"></a>
-        <a href="https://github.com/yourusername" target="_blank" class="icon"><img src="github-icon.svg" alt="GitHub"></a>
-        <a href="mailto:youremail@example.com" class="icon"><img src="email-icon.svg" alt="Email"></a>
+
+<!-- Social Icons -->
+        <div class="social-icons">
+        <a href="https://wa.me/+639930194713" target="_blank" class="icon">
+          <img src="images/whatsapp.jpg" alt="WhatsApp">
+        </a>
+        <a href="https://github.com/kaliente02" target="_blank" class="icon">
+          <img src="images/github.png" alt="GitHub">
+        </a>
+        <a href="mailto:kcr.moring@gmail.com" class="icon">
+          <img src="images/email.png" alt="Email">
+        </a>
       </div>
     </div>
   </section>
 
+<!-- About Section -->
+<section id="about" class="section about-section">
+  <div class="container about-content">
+    <h2 class="about-title">About Me</h2>
+    <p class="about-subtitle">I am a Smart Contract Developer using Rust Programming Language</p>
+
+    <div class="about-grid">
+      <!-- Image (Left Side) -->
+      <div class="about-image">
+        <img src="images/profile.jpg" alt="Developer at desk with Bitcoin neon sign">
+      </div>
+
+      <!-- Text (Right Side) -->
+      <div class="about-text">
+        <p>
+          I’m an experienced Full Stack Developer specializing in frontend development 
+          and smart contract programming on the Solana blockchain. I focus on creating clean, 
+          responsive, and user-friendly interfaces while ensuring that the underlying blockchain 
+          logic is efficient, reliable, and secure.
+        </p>
+        <p>
+          Passionate about Web3 and decentralized technology, I enjoy transforming complex ideas 
+          into practical, scalable applications. Whether it's building interactive dashboards, 
+          crafting powerful smart contracts, or optimizing user experiences, I strive to deliver 
+          solutions that are both innovative and impactful.
+        </p>
+        <a href="#contact" class="btn about-btn">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Skills section -->
   <section id="about" class="section about-section">
     <div class="container about-content">
-  <h2>About Me</h2>
+  <h2>Skills section WIP</h2>
   <p class="subtitle">
     Full Stack Developer specializing in frontend experiences and smart contracts on the Solana blockchain.
   </p>
 
   <div class="about-grid">
     <div class="about-image">
-      <img src="images/about-me.jpg" alt="Developer at desk with Bitcoin neon sign" />
+      <img src="images/profile.jpg" alt="Developer at desk with Bitcoin neon sign" />
     </div>
     <div class="about-text">
       <p>
@@ -70,6 +114,7 @@
 
   </section>
 
+<!-- Projects section -->
   <section id="projects" class="section projects-section">
     <div class="container">
       <h2>Projects</h2>
@@ -89,18 +134,58 @@
     </div>
   </section>
 
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Feel free to reach out to me via email or LinkedIn or any preferred channel.</p>
-      <ul class="contact-list">
-        <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
-        <!-- add more contact ways -->
-      </ul>
-    </div>
-  </section>
+<!-- Contact section -->
+<section id="contact" class="section contact-section">
+  <div class="container contact-container">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-subtitle">
+      Full Stack Developer specializing in frontend experiences and smart contracts on the Solana blockchain.
+    </p>
 
+    <div class="contact-grid">
+      <!-- Left: Contact Info -->
+      <div class="contact-info">
+        <div class="contact-card">
+          <i class="fab fa-whatsapp"></i>
+          <h3>WhatsApp</h3>
+          <p>@kaliente02</p>
+          <a href="https://wa.me/1234567890" target="_blank">Send a message</a>
+        </div>
+
+        <div class="contact-card">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <p>@kaliente02</p>
+          <a href="https://github.com/kaliente02" target="_blank">View GitHub Profile</a>
+        </div>
+
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>kaliente02@gmail.com</p>
+          <a href="mailto:kaliente02@gmail.com">Send an email</a>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form>
+          <div class="form-row">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your E-mail" required />
+          </div>
+          <input type="text" placeholder="Subject" required />
+          <textarea placeholder="Tell me about your project..." required></textarea>
+          <button type="submit" class="btn">Send a message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>© 2025 [Your Name]. All Rights Reserved.</p>
