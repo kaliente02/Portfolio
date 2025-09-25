@@ -288,21 +288,120 @@ header {
   color: var(--text-muted);
 }
 
-/* Skills Grid */
+/* Section Titles */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-tango);
+  text-align: center;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-tango);
+  text-align: center;
+}
+
+/* === Skills Section === */
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .skill-card {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 6px;
-  width: 150px;
-  text-align: center;
+  background: var(--color-cod-gray);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px #A62F03;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+.skill-card h3 {
+  color: var(--text-light);
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--color-tango);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-card li {
+  color: var(--text-muted);
+  margin: rem 0;
+  font-size: 0.95rem;
+}
+
+/* === Certificates Section === */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.certificate-card {
+  background: var(--color-cod-gray);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+.certificate-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 5px;
+}
+
+.cert-info h3 {
+  color: var(--text-light);
+  margin: 0 0 0.3rem;
+  font-size: 1.1rem;
+}
+
+.cert-info p {
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.cert-info a {
+  color: var(--color-tango);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cert-info a:hover {
+  text-decoration: underline;
+}
+
 
 /* Projects Section */
 .projects-section {
